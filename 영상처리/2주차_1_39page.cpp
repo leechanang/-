@@ -5,7 +5,7 @@ using namespace cv;
 using namespace std;
 int main()
 {
-	// °ËÁ¤»öÀ¸·Î ÃÊ±âÈ­µÈ 600¡¿400 Å©±âÀÇ ¿µ»ó »ı¼º
+	// ê²€ì •ìƒ‰ìœ¼ë¡œ ì´ˆê¸°í™”ëœ 600Ã—400 í¬ê¸°ì˜ ì˜ìƒ ìƒì„±
 	Mat image = Mat(400, 600, CV_8UC3, Scalar(0, 0, 0));
 	line(image, Point(100, 100), Point(300, 300), Scalar(0, 0, 255), 7);
 	rectangle(image, Point(250, 30), Point(450, 200), Scalar(0, 255, 0), 5);
