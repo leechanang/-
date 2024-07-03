@@ -20,7 +20,7 @@ void drawCircle(int event, int x, int y, int, void* param) {
 int main()
 {
 	img = imread("C:/Users/Chan's Victus/Documents/class/photo/bug.jpg");
-	if (img.empty()) { cout << "¿µ»óÀ» ÀÐÀ» ¼ö ¾øÀ½" << endl; return -1; }
+	if (img.empty()) { cout << "Â¿ÂµÂ»Ã³Ã€Â» Ã€ÃÃ€Â» Â¼Ã¶ Â¾Ã¸Ã€Â½" << endl; return -1; }
 	namedWindow("img", 1);
 	imshow("img", img);
 	setMouseCallback("img", drawCircle);
