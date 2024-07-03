@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace cv;
 using namespace std;
-// ¸¶¿ì½º ÀÌº¥Æ®°¡ ¹ß»ıÇÏ¸é È£ÃâµÇ´Â Äİ¹é ÇÔ¼öÀÌ´Ù.
+// ë§ˆìš°ìŠ¤ ì´ë²¤íŠ¸ê°€ ë°œìƒí•˜ë©´ í˜¸ì¶œë˜ëŠ” ì½œë°± í•¨ìˆ˜ì´ë‹¤.
 void onMouse(int event, int x, int y, int flags, void* param)
 {
 	if (event == EVENT_LBUTTONDOWN) {
@@ -10,7 +10,7 @@ void onMouse(int event, int x, int y, int flags, void* param)
 		circle(img, Point(x, y), 200, Scalar(0, 255, 0), 10);
 		putText(img, "I found a dog!", Point(x, y + 200),
 			FONT_HERSHEY_PLAIN, 2.0, 255, 2);
-		imshow("src", img); // ¿µ»óÀÌ º¯°æµÇ¸é ´Ù½Ã Ç¥½ÃÇÑ´Ù.
+		imshow("src", img); // ì˜ìƒì´ ë³€ê²½ë˜ë©´ ë‹¤ì‹œ í‘œì‹œí•œë‹¤.
 	}
 	else if (event == EVENT_RBUTTONDOWN) {}
 	else if (event == EVENT_MBUTTONDOWN) {}
@@ -20,7 +20,7 @@ void onMouse(int event, int x, int y, int flags, void* param)
 int main()
 {
 	Mat src = imread("C:/Users/Chan's Victus/Documents/class/photo/dog.jpg", IMREAD_COLOR);
-	if (src.empty()) { cout << "¿µ»óÀ» ÀĞÀ» ¼ö ¾øÀ½" << endl; }
+	if (src.empty()) { cout << "ì˜ìƒì„ ì½ì„ ìˆ˜ ì—†ìŒ" << endl; }
 	imshow("src", src);
 	setMouseCallback("src", onMouse, &src);
 	waitKey(0);
