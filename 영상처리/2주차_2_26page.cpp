@@ -16,10 +16,11 @@ void drawCircle(int event, int x, int y, int, void* param) {
 	else if (event == EVENT_LBUTTONUP)
 		drawing = false;
 	imshow("Image", img);
-}int main()
+}
+int main()
 {
 	img = imread("C:/Users/Chan's Victus/Documents/class/photo/bug.jpg");
-	if (img.empty()) { cout << "¿µ»óÀ» ÀÐÀ» ¼ö ¾øÀ½" << endl; return -1; }
+	if (img.empty()) { cout << "Â¿ÂµÂ»Ã³Ã€Â» Ã€ÃÃ€Â» Â¼Ã¶ Â¾Ã¸Ã€Â½" << endl; return -1; }
 	imshow("Image", img);
 	setMouseCallback("Image", drawCircle);
 	waitKey(0);
