@@ -6,10 +6,11 @@ int main()
 {
 	Mat img;
 	img = imread("C:/Users/Chan's Victus/Documents/class/photo/dog.jpg", IMREAD_COLOR);
-	if (img.empty()) { cout << "¿µ»óÀ» ÀÐÀ» ¼ö ¾øÀ½" << endl; }
+	if (img.empty()) { cout << "Â¿ÂµÂ»Ã³Ã€Â» Ã€ÃÃ€Â» Â¼Ã¶ Â¾Ã¸Ã€Â½" << endl; }
 	imshow("img", img);
 	int x = 300;
-	int y = 300;	while (1) {
+	int y = 300;
+	while (1) {
 		int key = waitKey(100);
 		if (key == 'q') break;
 		else if (key == 'a')
