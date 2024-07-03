@@ -3,22 +3,22 @@ using namespace cv;
 using namespace std;
 int main()
 {
-	//±âº» ¼±¾ğ ¹× °£°á ¹æ¹ı
+	//ê¸°ë³¸ ì„ ì–¸ ë° ê°„ê²° ë°©ë²•
 	Vec <int, 2> v1(5, 12);
 	Vec <double, 3> v2(40, 130.7, 125.6);
 	Vec2b v3(10, 10);
 	Vec6f v4(40.f, 230.25f, 525.6f);
 	Vec3i v5(200, 230, 250);
 
-	//°´Ã¼ ¿¬»ê ¹× Çüº¯È¯
-	Vec3d v6 = v2 + (Vec3d)v5; //Çüº¯È¯ ÇÊ¿ä (Vec3dÇüÀ¸·Î º¯È¯)
+	//ê°ì²´ ì—°ì‚° ë° í˜•ë³€í™˜
+	Vec3d v6 = v2 + (Vec3d)v5; //í˜•ë³€í™˜ í•„ìš” (Vec3dí˜•ìœ¼ë¡œ ë³€í™˜)
 	Vec2b v7 = (Vec2b)v1 + v3;
 	Vec6f v8 = v4 * 20.0f;
 
 	Point pt1 = v1 + (Vec2i)v7;
-	//Point3_<int> pt2 = v2; //¹¬½ÃÀû Çüº¯È¯ ¹ß»ı
+	//Point3_<int> pt2 = v2; //ë¬µì‹œì  í˜•ë³€í™˜ ë°œìƒ
 	
-	// ÄÜ¼ÖÃ¢ Ãâ·Â
+	// ì½˜ì†”ì°½ ì¶œë ¥
 	cout << "[v3] = " << v3 << endl;
 	cout << "[v7] = " << v7 << endl;
 	cout << "[v3 * v7] = " << v3.mul(v7) << endl;
